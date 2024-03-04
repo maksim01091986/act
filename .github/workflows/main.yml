@@ -3,10 +3,10 @@
 #
 # Copyleft (c) by Maksimus
 #--------------------------------------------------
-name: My-GitHub-Action-Basics                                                # Name of Workflow (try to create name without "whitespace")
-env:                                                                         # VARIABLES of "workflow" level
-   APPLICATION_NAME       : "MyFlask"
-   DEPLOY_PACKAGE_NAME    : "flask-deploy-version-${{ github.sha }}"         # Uses variable with context-${{ context.property }}, in our case context="github",property="sha"
+name: My-Check                                                # Name of Workflow (try to create name without "whitespace")
+#env:                                                                         # VARIABLES of "workflow" level
+#   APPLICATION_NAME       : "MyFlask"
+#   DEPLOY_PACKAGE_NAME    : "flask-deploy-version-${{ github.sha }}"         # Uses variable with context-${{ context.property }}, in our case context="github",property="sha"
 
 on:                                                                          # You may have several workflow-files in same directory, that's why you must specify condition for run
   push:                                                                      # condition for run this workflow "My-GitHub-Action-Basics" (or my-basics.yml) is everytime when "push" *
@@ -65,4 +65,4 @@ jobs:                                                                        # B
 #      run: aws --version
 #
 #    - name: Lets test some packeges if the are here 2                        # name of step 5
-      run: zip --version
+#      run: zip --version
