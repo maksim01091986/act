@@ -24,7 +24,7 @@ jobs:                                                                        # B
       run: kubectl config get-contexts
     
     - name: Check yc CLI veersion
-      run: yc version
+      run: env
 
 #    - name: Execute few commands                                             # name of step 3
 #      run: |
