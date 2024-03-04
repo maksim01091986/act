@@ -18,7 +18,7 @@ jobs:                                                                        # B
 
     steps:                                                                   # Blocks of STEPS. Like blocks in "Ansible".
     - name: Check kubectl existion
-      run: kubectl version
+      run: kubectl
     
     - name: Check config file
       run: kubectl config get-contexts
